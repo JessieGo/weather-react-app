@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  background-image: url(./assets/cold-bg.jpg);
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.warm {
+  background-image: url("./assets/warm-bg.jpg");
+  background-size: cover;
+}
+
+.container {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+  height: 100vh;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 auto;
+}
+.search-box .search-bar {
+  background-color: rgb(255, 255, 255, 0.5);
+  box-shadow: 2px 3px rgb(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.temp {
+  padding: 15px;
+  box-shadow: 3px 3px rgb(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255, 0.2);
+  width: 50px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.weather {
+  font-size: 20px;
+  font-weight: 500;
 }
